@@ -12,7 +12,7 @@ categories: C++
 
 서브태스크 1번은 학생 수가 2명일 때, 서브태스크 2번은 점수값이 LOW->HIGH, 서브태스크 3번은 아무런 제약 조건이 없음입니다.
 
-아래는 C++ 코드 전문입니다.
+아래는 100점으로 채점된 C++ 코드 전문입니다.
 ```cpp
 #include <iostream>
 using namespace std;
