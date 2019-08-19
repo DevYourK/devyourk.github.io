@@ -1,32 +1,39 @@
 ---
 layout: post
-title:  "Coding Post"
-description: An example post which shows code rendering.
+title:  "테스트"
+subtitle:  "Coding Post"
+description: 백준 15969번 C++
 date:   2019-05-23 21:03:36 +0530
-categories: Javascript NodeJS
+edit:   2019-05-23 21:03:36 +0530
+categories: C++
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 
-```javascript
-const express = require('express')
-const app = express()
- 
-app.get('/', function (req, res) {
-  res.send('Hello World')
-})
- 
-app.listen(3000)
-```
+```cpp
+#include <iostream>
+using namespace std;
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam qui voluptatem excepturi nemo similique atque sapiente aperiam, dolorum deleniti! Esse quam perferendis temporibus nemo at molestias necessitatibus tenetur cupiditate sapiente. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil et voluptatibus non labore officiis assumenda, distinctio perspiciatis blanditiis nesciunt rerum molestias impedit fugiat nulla qui libero minima quasi! Libero, iure.
-
-```scss
-body {
-	font-family: 'Nunito Sans', sans-serif;
-	line-height: 1.5em;
-	margin: 0;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+int main() {
+    int a;
+    cin >> a;
+    int b[a+1];
+    
+    for(int i=0; i<a; i++) cin >> b[i];
+    
+    b[a]=b[0]; b[a+1]=b[0];
+    
+    for(int i=1; i<a; i++)
+    {
+        if(b[i] != b[a] && b[i] != b[a+1]) {
+            if(b[i] > b[a+1]) {
+                b[a+1] = b[i];
+            } else if(b[i] < b[a]) {
+                b[a] = b[i];
+            }
+        }
+    }
+    
+    cout << b[a+1]-b[a];
 }
 ```
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam rerum, ratione impedit necessitatibus facere soluta odio repellat asperiores neque! Sunt iusto quia suscipit amet inventore eum, vel molestiae reiciendis alias.
+
+C++ 코드블럭
