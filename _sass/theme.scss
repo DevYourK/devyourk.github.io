@@ -178,10 +178,10 @@ header {
 	padding: 0;
 	li {
 		float: left;
-		padding: 10px 20px;
+		padding:5px 10px;
 		background-color: $lightGray;
 		color: #000;
-		margin: 5px;
+		margin: 2px;
 		border-radius: 2px;
 		@include fluidType(15px, 17px);
 		&:first-child {
@@ -194,12 +194,12 @@ header {
 	list-style-type: none;
 	padding: 0;
 	>li {
-		margin-bottom: 30px;
-		padding-bottom: 20px;
+		padding:20px;
 		&:not(:last-child) {
 			border-bottom: 1px solid $lightGray;
 		}
 		transition:background-color .2s;
+		border-radius:5px;
 	}
 	>li:hover {
 		background-color:rgb(155, 155, 155);
