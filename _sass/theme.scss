@@ -41,17 +41,15 @@ h1, h2, h3 {
 }
 
 h1 {
-	@include fluidType(36px, 48px);
+	font-family:'NanumSquare';
 }
 
 h2 {
-	font-weight: bold;
-	@include fluidType(28px, 32px);
+	font-family:'NanumSquare';
 }
 
 h4 {
-	font-weight: normal;
-	@include fluidType(18px, 20px);
+	font-family:'NanumSquare';
 }
 
 header {
