@@ -199,6 +199,7 @@ header {
 		&:not(:last-child) {
 			border-bottom: 1px solid $lightGray;
 		}
+		transition:background-color .4s;
 	}
 	>li:hover {
 		background-color:rgb(116, 116, 116);
