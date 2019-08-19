@@ -1,3 +1,4 @@
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
 @import 'ext/fonts';
 @import 'ext/normalize';
 @import 'begin';
@@ -58,6 +59,7 @@ header {
 	padding: 30px 0;
 	color: #fff;
 	overflow: hidden;
+	font-family:'NanumSqaure', sans-serif;
 	h2 {
 		font-weight: normal;
 		margin-top: 5px;
