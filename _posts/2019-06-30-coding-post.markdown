@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "테스트"
-subtitle:  "Coding Post"
+title: 테스트
+subtitle: Coding Post
 description: 백준 15969번 C++
 date:   2019-05-23 21:03:36 +0530
 edit:   2019-05-23 21:03:36 +0530
