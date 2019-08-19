@@ -4,7 +4,7 @@ layout: page
 {%- if site.posts.size > 0 -%}
 <ul class="posts">
 	{%- for post in site.posts -%}
-	<li>
+	<li><a href="{{ post.url | relative_url }}">
 		{%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
 		<div class="post-meta">
 			<a class="post-link" href="{{ post.url | relative_url }}">
@@ -16,7 +16,7 @@ layout: page
 			{%- if site.show_excerpts -%}
 			{{ post.subtitle }}
 			{%- endif -%}
-		</div>
+		</div></a>
 	</li>
 	{%- endfor -%}
 </ul>
